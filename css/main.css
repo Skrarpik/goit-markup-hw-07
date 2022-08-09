@@ -65,6 +65,9 @@ img {
 .btn {
   padding: 10px 32px;
   border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -341,15 +344,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-
-.agreement-checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
+  cursor: pointer;
 }
 
 .checkbox-icon {
@@ -424,12 +419,6 @@ img {
 .agreement-lable .link {
   color: var(--brand-color);
   text-decoration: underline;
-}
-
-.btn-modal {
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
 }
 
 .skills__list {
