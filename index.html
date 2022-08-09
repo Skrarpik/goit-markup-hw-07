@@ -15,34 +15,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="logo link" href="./index.html"> Web<span class="logo-black">Studio</span></a>
-        <nav>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link hover-color active" href="./index.html">Студия</a>
+        <a class="logo link" href="./index.html"> Web<span class="logo--black">Studio</span></a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link hover--brand-color nav_active" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link hover-color" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link link hover--brand-color" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item"><a class="nav-link link hover-color" href="">Контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link link hover--brand-color" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a class="contacts-link link hover-color" href="mailto:info@devstudio.com"
-              ><svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link hover--brand-color" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a class="contacts-link link hover-color" href="tel:+380961111111"
-              ><svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link link hover--brand-color" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-phone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -58,54 +60,54 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="btn btn-hero" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="skills section">
-        <div class="container skills-container">
+        <div class="container skills__container">
           <h2 class="hidden">Наши преимущества</h2>
-          <ul class="skills-list list card-set">
-            <li class="skills-item card-item">
-              <div class="skills-wrap">
-                <svg class="skills-icon" width="70" height="70">
+          <ul class="skills__list list card-set">
+            <li class="skills__item card-item">
+              <div class="skills__wrap">
+                <svg class="skills__icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="skills-title">Внимание к деталям</h3>
-              <p class="skills-text">
+              <h3 class="skills__title">Внимание к деталям</h3>
+              <p class="skills__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="skills-item card-item">
-              <div class="skills-wrap">
-                <svg class="skills-icon" width="70" height="70">
+            <li class="skills__item card-item">
+              <div class="skills__wrap">
+                <svg class="skills__icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="skills-title">Пунктуальность</h3>
-              <p class="skills-text">
+              <h3 class="skills__title">Пунктуальность</h3>
+              <p class="skills__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="skills-item card-item">
-              <div class="skills-wrap">
-                <svg class="skills-icon" width="70" height="70">
+            <li class="skills__item card-item">
+              <div class="skills__wrap">
+                <svg class="skills__icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="skills-title">Планирование</h3>
-              <p class="skills-text">
+              <h3 class="skills__title">Планирование</h3>
+              <p class="skills__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="skills-item card-item">
-              <div class="skills-wrap">
-                <svg class="skills-icon" width="70" height="70">
+            <li class="skills__item card-item">
+              <div class="skills__wrap">
+                <svg class="skills__icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="skills-title">Современные технологии</h3>
-              <p class="skills-text">
+              <h3 class="skills__title">Современные технологии</h3>
+              <p class="skills__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -114,42 +116,42 @@
       </section>
       <section class="work section">
         <div class="container work-container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work-list list card-set">
-            <li class="work-item card-item">
-              <div class="work-thumb">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="work__list list card-set">
+            <li class="work__item card-item">
+              <div class="work__thumb">
                 <img
-                  class="work-img"
+                  class="work__img"
                   src="./images/work/box1.jpg"
                   width="370"
                   height="294"
                   alt="Десктопные приложения"
                 />
-                <p class="work-label">Десктопные приложения</p>
+                <p class="work__label">Десктопные приложения</p>
               </div>
             </li>
-            <li class="work-item card-item">
-              <div class="work-thumb">
+            <li class="work__item card-item">
+              <div class="work__thumb">
                 <img
-                  class="work-img"
+                  class="work__img"
                   src="./images/work/box2.jpg"
                   width="370"
                   height="294"
                   alt="Мобильная разработка"
                 />
-                <p class="work-label">Мобильные приложения</p>
+                <p class="work__label">Мобильные приложения</p>
               </div>
             </li>
-            <li class="work-item card-item">
-              <div class="work-thumb">
+            <li class="work__item card-item">
+              <div class="work__thumb">
                 <img
-                  class="work-img"
+                  class="work__img"
                   src="./images/work/box3.jpg"
                   width="370"
                   height="294"
                   alt="Дизаин"
                 />
-                <p class="work-label">Дизайнерские решения</p>
+                <p class="work__label">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -157,18 +159,18 @@
       </section>
       <section class="team section">
         <div class="container team-container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list card-set">
-            <li class="team-item card-item">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team_list list card-set">
+            <li class="team__item card-item">
               <img
                 src="./images/team/igor.jpg"
                 width="270"
                 height="260"
                 alt="Сотрудник Игорь Демьяненко"
               />
-              <div class="team-wrapper">
-                <h3 class="team-name">Игорь Демьяненко</h3>
-                <p class="team-work" lang="en">Product Designer</p>
+              <div class="team__wrapper">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p class="team__work" lang="en">Product Designer</p>
                 <ul class="social-nav list card-set">
                   <li class="social-item card-item">
                     <a class="social-link link" href="#" target="_blank" rel="noopener noreferrer"
@@ -197,16 +199,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item card-item">
+            <li class="team__item card-item">
               <img
                 src="./images/team/olga.jpg"
                 width="270"
                 height="260"
                 alt="Сотрудник Ольга Репина"
               />
-              <div class="team-wrapper">
-                <h3 class="team-name">Ольга Репина</h3>
-                <p class="team-work" lang="en">Frontend Developer</p>
+              <div class="team__wrapper">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p class="team__work" lang="en">Frontend Developer</p>
                 <ul class="social-nav list card-set">
                   <li class="social-item card-item">
                     <a class="social-link link" href="#" target="_blank" rel="noopener noreferrer"
@@ -235,16 +237,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item card-item">
+            <li class="team__item card-item">
               <img
                 src="./images/team/nikolai.jpg"
                 width="270"
                 height="260"
                 alt="Сотрудник Николай Тарасов"
               />
-              <div class="team-wrapper">
-                <h3 class="team-name">Николай Тарасов</h3>
-                <p class="team-work" lang="en">Marketing</p>
+              <div class="team__wrapper">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p class="team__work" lang="en">Marketing</p>
                 <ul class="social-nav list card-set">
                   <li class="social-item card-item">
                     <a class="social-link link" href="#" target="_blank" rel="noopener noreferrer"
@@ -273,16 +275,16 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item card-item">
+            <li class="team__item card-item">
               <img
                 src="./images/team/michail.jpg"
                 width="270"
                 height="260"
                 alt=" Сотрудник Михаил Ермаков"
               />
-              <div class="team-wrapper">
-                <h3 class="team-name">Михаил Ермаков</h3>
-                <p class="team-work" lang="en">UI Designer</p>
+              <div class="team__wrapper">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p class="team__work" lang="en">UI Designer</p>
                 <ul class="social-nav list card-set">
                   <li class="social-item card-item">
                     <a class="social-link link" href="#" target="_blank" rel="noopener noreferrer"
@@ -316,7 +318,7 @@
       </section>
       <section class="section">
         <div class="container client-container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="client-list list card-set">
             <li class="card-item client-item">
               <a class="client-link" href="#" target="_blank" rel="noopener noreferrer">
@@ -362,12 +364,12 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="container-address footer-item">
-          <a class="logo link" href="./index.html"> Web<span class="logo-white">Studio</span></a>
+          <a class="logo link" href="./index.html"> Web<span class="logo--white">Studio</span></a>
           <address>
             <ul class="address-list list">
               <li class="address-item">
                 <a
-                  class="address-link address-google link hover-color"
+                  class="address-link address-google link hover--brand-color"
                   href="https://goo.gl/maps/GdrmN5GAiVvAwd8F9"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -376,12 +378,12 @@
                 >
               </li>
               <li class="address-item">
-                <a class="address-link link hover-color" href="mailto:info@devstudio.com"
+                <a class="address-link link hover--brand-color" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address-item">
-                <a class="address-link link hover-color" href="tel:+380961111111"
+                <a class="address-link link hover--brand-color" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -421,7 +423,7 @@
           <label class="footer-title" for="email">Подпишитесь на рассылку</label>
           <div class="newsletter-wrap">
             <input class="input-email" type="email" name="email" id="email" placeholder="E-mail" />
-            <button class="btn-hero btn-input" type="submit">
+            <button class="btn btn-input" type="submit">
               Подписаться<svg class="icon-send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
@@ -472,12 +474,19 @@
             placeholder="Введите текст"
           ></textarea>
 
-            <label class="agreement-lable" for="agreement"
-              ><input class="agreement-checkbox" type="checkbox" name="agreement" id="agreement" /><span class="checkbox-icon"></span> Соглашаюсь
-              с рассылкой и принимаю&nbsp;<a class="link" href="#">Условия договора</a></label
-            >
-            <button class="btn-hero btn-modal" type="submit">Отправить</button>
-
+          <label class="agreement-lable" for="agreement"
+            ><input
+              class="agreement-checkbox"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            /><span class="checkbox-icon"></span> Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              class="link"
+              href="#"
+              >Условия договора</a
+            ></label
+          >
+          <button class="btn btn-modal" type="submit">Отправить</button>
         </form>
       </div>
     </div>
