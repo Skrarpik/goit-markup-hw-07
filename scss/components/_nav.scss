@@ -1,5 +1,6 @@
 .nav__list {
   display: flex;
+  color: var(--text-color);
 }
 
 .nav__item:not(:last-child) {
@@ -11,6 +12,7 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--text-color);
 }
 
 .nav_active {
